@@ -1,0 +1,59 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    box-sizing: border-box;
+    padding: 0% 1%;
+}
+
+.column1 {
+    flex: 0 0 25%;
+    max-width: 25%;
+    background-color: #F0F7FF;
+    height: 94vh;
+    background-image: url('https://cdn3d.iconscout.com/3d/premium/thumb/loan-5706072-4755627.png');
+    background-size: 300px;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+}
+
+.column2 {
+    flex: 0 0 75%;
+    max-width: 75%;
+   
+}
+.column2_outer{
+    margin: 1% 1%;
+    padding: 0.1% 1%;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+@media only screen and (max-width: 768px) {
+    .column1, .column2 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .column1 {
+        flex: 0 0 40%;
+        max-width: 40%;
+    }
+
+    .column2 {
+        flex: 0 0 60%;
+        max-width: 60%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .column1, .column2 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}

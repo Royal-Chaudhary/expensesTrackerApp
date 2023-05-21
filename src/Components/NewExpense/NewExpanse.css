@@ -1,0 +1,52 @@
+.new-expense {
+  padding: 1rem;
+  margin: 2rem auto;
+  width: 95%;
+  max-width: 50rem;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.new-expense button {
+  font-family: "Arial", sans-serif;
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 1rem 1rem;
+  border: none;
+  background-color: #FD6C3B;
+  color: white;
+  border-radius: 2px;
+  margin-right: 1rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.new-expense button:hover,
+.new-expense button:active {
+  background-color: #fc5017;
+}
+
+.new-expense button.alternative {
+  color: #220131;
+  border: 1px solid #220131;
+  background-color: transparent;
+  text-shadow: none;
+  box-shadow: none;
+}
+
+.new-expense button.alternative:hover,
+.new-expense button.alternative:active {
+  background-color: #ddb3f8;
+}
+
+@media only screen and (max-width: 768px) {
+  .new-expense {
+    padding: 0.8rem;
+  }
+  
+  .new-expense button {
+    font-size: 1rem;
+    padding: 0.8rem 1.6rem;
+  }
+}

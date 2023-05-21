@@ -1,0 +1,11 @@
+.card{
+    border-radius: 20px;
+}
+
+/* Write responsive code for mobile and tablet */
+
+@media (max-width: 768px) {
+    .card{
+        width: 100%;
+    }
+}
